@@ -1,24 +1,13 @@
-import logo from './logo.svg';
+import { useEffect } from 'react';
 import './App.css';
+import Aos from 'aos';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    useEffect(()=>{
+     Aos.init()
+    },[])
+    return (
+    <h2 className='text-indigo-600 text-2xl font-bold'>My Protfolio</h2>
   );
 }
 
